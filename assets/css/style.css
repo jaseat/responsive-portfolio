@@ -230,12 +230,14 @@ input[type=submit]{
 @media screen and (max-width: 978px){
 	body, #headbar, #content, #main-section, #sidebar, #footer{
 		width: 100%;
-		min-width: 768px;
+		min-width: 0px;
 		float: none;
 	}
 
 	#main-section, #sidebar, #footer{
 		box-sizing: border-box;
+		width: 95%;
+		margin: auto;
 	}
 
 	#main-section{
@@ -256,6 +258,31 @@ input[type=submit]{
 
 	#links ul li{
 		margin-right: 10px;
+	}
+
+}
+
+@media screen and (max-width: 640px){
+	#headbar{
+		height: 100px;
+		min-width: 0;
+		width: 100%;
+	}
+	#headbar #name, #headbar ul{
+		height: 50px;
+		margin-left: 0;
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	#headbar ul{
+		text-align: center;
+	}
+
+	#headbar #name{
+		display: block;
+		text-align: center;
 	}
 
 }
