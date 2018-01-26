@@ -239,6 +239,9 @@ input[type=submit]{
 		width: 95%;
 		margin: auto;
 	}
+	#footer{
+		width: 100%;
+	}
 
 	#main-section{
 		margin-bottom: 40px;
