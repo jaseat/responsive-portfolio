@@ -281,7 +281,7 @@ input[type=submit]{
 
 @media screen and (max-width: 640px){
 	#headbar{
-		height: 100px;
+		height: 130px;
 		min-width: 0;
 		width: 100%;
 	}
@@ -289,17 +289,37 @@ input[type=submit]{
 		height: 50px;
 		margin-left: 0;
 		float: none;
-		width: 100%;
-		padding: 0;
+		width: 100%
+;		padding: 0;
 	}
 
-	#headbar ul{
+	/*#headbar ul{
 		text-align: center;
-	}
+	}*/
 
 	#headbar #name{
 		display: block;
 		text-align: center;
+		padding-top: 10px;
+	}
+
+	#headbar ul{
+		margin-top: 20px;
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	#headbar ul li{
+		display: table-cell;
+		text-align: center;
+		position: relative;
+	}
+	#headbar ul li:not(:first-child):before {
+		color: #dddddd;
+    	content: " | ";
+    	position: absolute;
+    	left: 0;
 	}
 
 }
