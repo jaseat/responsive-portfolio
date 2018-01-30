@@ -227,7 +227,7 @@ input[type=submit]{
 	padding: 16px 0;
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 980px){
 	body, #headbar, #content, #main-section, #sidebar, #footer{
 		width: 100%;
 		min-width: 0px;
@@ -275,7 +275,9 @@ input[type=submit]{
 	}
 
 	#portfolio-list li:nth-of-type(2n){
-		margin-left: 0;
+		margin-left: 36px;
+	}
+	#portfolio-list li:nth-of-type(2n-1){
 	}
 }
 
@@ -320,6 +322,11 @@ input[type=submit]{
     	content: " | ";
     	position: absolute;
     	left: 0;
+	}
+
+		#portfolio-list li:nth-of-type(2n){
+		margin-left: 0;
+		position: static;
 	}
 
 }
